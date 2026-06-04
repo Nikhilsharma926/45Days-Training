@@ -1,0 +1,356 @@
+Basics of CSS (Cascading Style Sheets)
+1. Introduction to CSS
+CSS (Cascading Style Sheets) ek styling language hai jo HTML elements ko design karne ke liye use hoti hai.
+
+CSS kyun important hai?
+Website ko attractive banata hai.
+
+Colors, fonts, spacing aur layout control karta hai.
+
+Responsive design banane mein help karta hai.
+
+HTML aur design ko alag rakhta hai.
+
+Example
+HTML
+
+
+
+
+<p>Hello World</p>
+CSS
+
+p{
+    color: blue;
+    font-size: 20px;
+}
+2. Understanding CSS Syntax
+Syntax Structure
+CSS
+
+selector {
+    property: value;
+}
+Example
+CSS
+
+h1{
+    color: red;
+    font-size: 30px;
+}
+h1 → Selector
+
+color → Property
+
+red → Value
+
+3. Selectors in CSS
+Selectors HTML elements ko select karte hain styling ke liye.
+
+Element Selector
+CSS
+
+p{
+    color: blue;
+}
+Sabhi <p> tags par apply hoga.
+
+Class Selector
+CSS
+
+.myClass{
+    color: green;
+}
+HTML
+
+
+
+
+<p class="myClass">Hello</p>
+ID Selector
+CSS
+
+#myId{
+    color: red;
+}
+HTML
+
+
+
+
+<p id="myId">Hello</p>
+4. Comments in CSS
+Comments browser ignore karta hai.
+
+Single Line Comment
+CSS
+
+/* This is a comment */
+Example
+CSS
+
+/* Heading Styling */
+h1{
+    color: blue;
+}
+5. Adding CSS to HTML
+Inline CSS
+HTML tag ke andar style attribute use karte hain.
+
+HTML
+
+
+
+
+<p style="color:red;">Hello</p>
+Advantages
+Quick styling
+
+Disadvantages
+Reusable nahi hoti
+
+Internal CSS
+HTML file ke <head> section mein likhte hain.
+
+HTML
+
+
+
+
+<head>
+<style>
+p{
+    color: blue;
+}
+</style>
+</head>
+External CSS
+Alag .css file banate hain.
+
+HTML
+HTML
+
+
+
+
+<link rel="stylesheet" href="style.css">
+style.css
+CSS
+
+p{
+    color: green;
+}
+Advantages
+Reusable
+
+Professional method
+
+6. Difference Between Class, ID and Element Selectors
+Selector	Symbol	Use
+Element	tag name	Sabhi same tags ko style karne ke liye
+Class	.	Multiple elements par same style lagane ke liye
+ID	#	Unique element ko style karne ke liye
+
+Example
+HTML
+
+
+
+
+<h1 id="heading">Title</h1>
+
+<p class="text">Paragraph 1</p>
+<p class="text">Paragraph 2</p>
+CSS
+
+#heading{
+    color:red;
+}
+
+.text{
+    color:blue;
+}
+7. Understanding Precedence of Selectors
+Agar ek hi element par multiple styles apply ho rahi hain to priority ka rule follow hota hai.
+
+Priority Order
+
+Inline CSS
+   ↓
+ID Selector
+   ↓
+Class Selector
+   ↓
+Element Selector
+Example
+HTML
+
+
+
+
+<p id="demo" class="text" style="color:red;">
+Hello
+</p>
+CSS
+
+p{
+    color: blue;
+}
+
+.text{
+    color: green;
+}
+
+#demo{
+    color: orange;
+}
+Output
+Text Red hoga kyunki Inline CSS ki priority sabse zyada hoti hai.
+
+8. Text Styling Properties in CSS
+1. font-family
+Text ka font change karta hai.
+
+CSS
+
+p{
+    font-family: Arial, sans-serif;
+}
+2. font-style
+Text ko italic ya normal banata hai.
+
+CSS
+
+p{
+    font-style: italic;
+}
+Values:
+
+normal
+
+italic
+
+oblique
+
+3. font-weight
+Text ki thickness control karta hai.
+
+CSS
+
+p{
+    font-weight: bold;
+}
+Values:
+
+normal (400)
+
+bold (700)
+
+100 to 900
+
+4. line-height
+Lines ke beech spacing set karta hai.
+
+CSS
+
+p{
+    line-height: 30px;
+}
+5. text-decoration
+Text decoration add/remove karta hai.
+
+CSS
+
+p{
+    text-decoration: underline;
+}
+Values:
+
+underline
+
+overline
+
+line-through
+
+none
+
+6. text-align
+Text alignment set karta hai.
+
+CSS
+
+p{
+    text-align: center;
+}
+Values:
+
+left
+
+center
+
+right
+
+justify
+
+7. text-transform
+Text ke letters ka format change karta hai.
+
+CSS
+
+p{
+    text-transform: uppercase;
+}
+Values:
+
+uppercase
+
+lowercase
+
+capitalize
+
+8. letter-spacing
+Letters ke beech distance set karta hai.
+
+CSS
+
+p{
+    letter-spacing: 3px;
+}
+9. word-spacing
+Words ke beech distance set karta hai.
+
+CSS
+
+p{
+    word-spacing: 10px;
+}
+10. text-shadow
+Text ke piche shadow add karta hai.
+
+CSS
+
+h1{
+    text-shadow: 2px 2px 5px gray;
+}
+Format
+CSS
+
+text-shadow: horizontal vertical blur color;
+Example
+CSS
+
+h1{
+    text-shadow: 3px 3px 4px red;
+}
+Quick Revision
+Property	Purpose
+font-family	Font change
+font-style	Italic/Normal
+font-weight	Boldness
+line-height	Line spacing
+text-decoration	Underline etc.
+text-align	Alignment
+text-transform	Uppercase/Lowercase
+letter-spacing	Letter gap
+word-spacing	Word gap
+text-shadow	Text shadow

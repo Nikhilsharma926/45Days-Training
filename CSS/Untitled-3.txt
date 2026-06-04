@@ -1,0 +1,491 @@
+ What is a Form?
+
+Form user se information lene ke liye use hota hai.
+
+Examples:
+
+Login Form
+
+Registration Form
+
+Contact Form
+
+Feedback Form
+
+Job Application Form
+
+Form Kyu Important Hai?
+ .User Data Collect Karna
+ .Login/Register Karna
+ .Feedback Lena
+ .Files Upload Karna
+ .Search Functionality Banana
+
+2. Basic Form Structure
+HTML
+
+
+
+
+<form>
+    <label>Name:</label>
+    <input type="text" >
+
+    <button>Submit</button>
+</form>
+
+
+3. Important Form Tags
+<form>
+Form ka main container.
+
+HTML
+
+
+
+
+<form>
+    Form Elements Here
+</form>
+<label>
+Input field ka naam dikhata hai.
+
+HTML
+
+
+
+
+<label>Enter Name</label>
+<input>
+User input lene ke liye.
+
+HTML
+
+
+
+
+<input type="text">
+<textarea>
+Multi-line text ke liye.
+
+HTML
+
+
+
+
+<textarea rows="4" cols="30"></textarea>
+<select>
+Dropdown menu.
+
+HTML
+
+
+
+
+<select>
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>JavaScript</option>
+</select>
+<button>
+Button create karta hai.
+
+HTML
+
+
+
+
+<button>Submit</button>
+4. Types of Input Fields
+Text Input
+HTML
+
+
+
+
+<input type="text">
+Name enter karne ke liye.
+
+Checkbox
+HTML
+
+
+
+
+<input type="checkbox"> Cricket
+Multiple options select kar sakte hain.
+
+Radio Button
+
+HTML
+
+
+
+
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+Sirf ek option select hoga.
+
+Color Picker
+HTML
+
+
+
+
+<input type="color">
+Color choose karne ke liye.
+
+File Upload
+HTML
+
+
+
+
+<input type="file">
+File upload karne ke liye.
+
+Telephone
+HTML
+
+
+
+
+<input type="tel">
+Phone number ke liye.
+
+Date Picker
+HTML
+
+
+
+
+<input type="date">
+Date select karne ke liye.
+
+Number Input
+HTML
+
+
+
+
+<input type="number">
+Numbers enter karne ke liye.
+
+Submit Button
+HTML
+
+
+
+
+<input type="submit">
+Form submit karne ke liye.
+
+Range Slider
+HTML
+
+
+
+
+<input type="range" min="0" max="100">
+Slider create karta hai.
+
+Complete Form Example
+HTML
+
+
+
+
+<form>
+
+<label>Name:</label>
+<input type="text" placeholder="Enter Name">
+
+<br><br>
+
+<label>Email:</label>
+<input type="email">
+
+<br><br>
+
+<label>Phone:</label>
+<input type="tel">
+
+<br><br>
+
+<label>Date of Birth:</label>
+<input type="date">
+
+<br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+
+<br><br>
+
+<label>Hobbies:</label>
+<input type="checkbox"> Cricket
+<input type="checkbox"> Music
+
+<br><br>
+
+<label>Course:</label>
+<select>
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>JavaScript</option>
+</select>
+
+<br><br>
+
+<label>Message:</label>
+<textarea></textarea>
+
+<br><br>
+
+<input type="submit">
+
+</form>
+5. Form Attributes
+method
+Data kaise send hoga.
+
+HTML
+
+
+
+
+<form method="post">
+GET
+URL me data show hota hai.
+
+POST
+Data hidden rehta hai.
+
+action
+Data kis page ya server par bhejna hai.
+
+HTML
+
+
+
+
+<form action="submit.php">
+target
+Response kaha open hoga.
+
+HTML
+
+
+
+
+<form target="_blank">
+Value	Meaning
+_self	Same page
+_blank	New Tab
+
+novalidate
+Validation disable kar deta hai.
+
+HTML
+
+
+
+
+<form novalidate>
+enctype
+File upload ke time use hota hai.
+
+HTML
+
+
+
+
+<form enctype="multipart/form-data">
+name
+Input ko unique name dena.
+
+HTML
+
+
+
+
+<input name="username">
+required
+Field compulsory banata hai.
+
+HTML
+
+
+
+
+<input type="text" required>
+placeholder
+Hint text show karta hai.
+
+HTML
+
+
+
+
+<input type="text" placeholder="Enter Name">
+Media Tags in HTML
+Media tags audio aur video show karne ke liye use hote hain.
+
+Audio Tag
+HTML
+
+
+
+
+<audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+Output:
+
+🎵 Audio Player
+
+Video Tag
+HTML
+
+
+
+
+<video width="400" controls>
+    <source src="video.mp4" type="video/mp4">
+</video>
+Output:
+
+🎥 Video Player
+
+Media Tag Attributes
+src
+Media file ka path.
+
+HTML
+
+
+
+
+<audio src="song.mp3"></audio>
+width
+Width set karta hai.
+
+HTML
+
+
+
+
+<video width="500"></video>
+height
+Height set karta hai.
+
+HTML
+
+
+
+
+<video height="300"></video>
+alt
+Alternative text (mostly image tag ke liye).
+
+HTML
+
+
+
+
+<img src="nature.jpg" alt="Nature Image">
+muted
+Audio mute karke start karega.
+
+HTML
+
+
+
+
+<video muted></video>
+loop
+Media repeat hota rahega.
+
+HTML
+
+
+
+
+<video loop></video>
+autoplay
+Page load hote hi media play karega.
+
+HTML
+
+
+
+
+<video autoplay muted></video>
+controls
+Play, Pause, Volume buttons show karega.
+
+HTML
+
+
+
+
+<audio controls></audio>
+media
+Media query ke according source choose karta hai.
+
+HTML
+
+
+
+
+<source media="(min-width:800px)" src="large-video.mp4">
+Using <source> for Alternative Files
+Agar browser pehli file support nahi karta to dusri file use karega.
+
+Audio Example
+HTML
+
+
+
+
+<audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+    <source src="song.ogg" type="audio/ogg">
+
+    Your browser does not support audio.
+</audio>
+Video Example
+HTML
+
+
+
+
+<video width="500" controls>
+
+    <source src="video.mp4" type="video/mp4">
+
+    <source src="video.webm" type="video/webm">
+
+    Your browser does not support video.
+
+</video>
+Why use <source>?
+✅ Browser Compatibility
+✅ Backup Media File
+✅ Better Performance
+✅ Different Formats Support
+
+Practice Task
+Student Registration Form banao jisme:
+
+✅ Name
+✅ Email
+✅ Phone Number
+✅ Gender
+✅ Hobbies
+✅ Course Dropdown
+✅ Message Box
+✅ Submit Button
+✅ Audio Player
+✅ Video Player
