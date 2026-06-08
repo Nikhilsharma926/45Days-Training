@@ -1,0 +1,336 @@
+1. Introduction to CSS & Why It Is Important
+CSS (Cascading Style Sheets) ek styling language hai jo HTML elements ko design karne ke liye use hoti hai.
+
+CSS ki Importance
+Website ko attractive banati hai.
+
+Colors, fonts aur layouts control karti hai.
+
+Responsive design create karne mein help karti hai.
+
+Code ko maintain karna easy ho jata hai.
+
+User experience improve hota hai.
+
+Without CSS:
+Website sirf plain text ki tarah dikhegi.
+
+With CSS:
+Website professional aur beautiful dikhegi.
+
+2. CSS Syntax
+Syntax Structure
+CSS
+
+selector {
+    property: value;
+}
+Example
+CSS
+
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+Parts of Syntax
+Selector → Kis element par style lagani hai.
+
+Property → Kya change karna hai.
+
+Value → Property ki value.
+
+3. CSS Comments
+Comments code explain karne ke liye use hote hain.
+
+CSS
+
+/* This is a CSS Comment */
+
+h1{
+    color:red;
+}
+4. Adding CSS to HTML
+A. Inline CSS
+Style directly HTML tag ke andar lagayi jati hai.
+
+HTML
+
+
+
+
+<h1 style="color:red;">Hello World</h1>
+Advantage
+Quick styling
+
+Disadvantage
+Reusable nahi hoti.
+
+B. Internal CSS
+HTML file ke <head> section mein likhi jati hai.
+
+HTML
+
+
+
+
+<head>
+<style>
+h1{
+    color:blue;
+}
+</style>
+</head>
+C. External CSS
+Alag .css file banayi jati hai.
+
+HTML
+HTML
+
+
+
+
+<link rel="stylesheet" href="style.css">
+style.css
+CSS
+
+h1{
+    color:green;
+}
+Advantage
+Best practice
+
+Reusable
+
+Easy maintenance
+
+5. CSS Selectors
+Selectors HTML elements ko target karte hain.
+
+A. Element Selector
+Tag name se select karta hai.
+
+CSS
+
+p{
+    color:blue;
+}
+HTML
+
+
+
+
+<p>Hello</p>
+B. Class Selector
+. (dot) use hota hai.
+
+CSS
+
+.heading{
+    color:red;
+}
+HTML
+
+
+
+
+<h1 class="heading">Welcome</h1>
+Use:
+Multiple elements par same style lagani ho.
+
+C. ID Selector
+# use hota hai.
+
+CSS
+
+#title{
+    color:green;
+}
+HTML
+
+
+
+
+<h1 id="title">Hello</h1>
+Use:
+Unique element ko style karne ke liye.
+
+Difference Between Class, ID & Element
+Selector	Symbol	Reusable	Priority
+Element	p, h1	Yes	Low
+Class	.class	Yes	Medium
+ID	#id	No	High
+
+6. CSS Precedence (Priority)
+Agar ek hi element par multiple styles lag rahi ho to priority decide karti hai kaunsi style apply hogi.
+
+Order of Priority
+
+Inline CSS
+   ↓
+ID Selector
+   ↓
+Class Selector
+   ↓
+Element Selector
+Example
+HTML
+
+
+
+
+<h1 id="title" class="heading" style="color:red;">
+Welcome
+</h1>
+CSS
+
+h1{
+ color:blue;
+}
+
+.heading{
+ color:green;
+}
+
+#title{
+ color:orange;
+}
+Output
+
+Red
+Kyunki Inline CSS ki priority sabse highest hoti hai.
+
+7. Styling Text Using CSS
+A. font-family
+Text ka font change karta hai.
+
+CSS
+
+p{
+    font-family: Arial, sans-serif;
+}
+B. font-style
+Text ko italic ya normal banata hai.
+
+CSS
+
+p{
+    font-style: italic;
+}
+Values:
+
+normal
+
+italic
+
+oblique
+
+C. font-weight
+Text ki boldness control karta hai.
+
+CSS
+
+p{
+    font-weight: bold;
+}
+Values:
+
+normal
+
+bold
+
+100–900
+
+D. line-height
+Lines ke beech spacing set karta hai.
+
+CSS
+
+p{
+    line-height: 30px;
+}
+E. text-decoration
+Text ke niche line ya decoration lagata hai.
+
+CSS
+
+a{
+    text-decoration: none;
+}
+Values:
+
+none
+
+underline
+
+overline
+
+line-through
+
+F. text-align
+Text ki alignment set karta hai.
+
+CSS
+
+p{
+    text-align: center;
+}
+Values:
+
+left
+
+center
+
+right
+
+justify
+
+G. text-transform
+Text ka case change karta hai.
+
+CSS
+
+p{
+    text-transform: uppercase;
+}
+Values:
+
+uppercase
+
+lowercase
+
+capitalize
+
+H. letter-spacing
+Letters ke beech gap badhata hai.
+
+CSS
+
+h1{
+    letter-spacing: 3px;
+}
+I. word-spacing
+Words ke beech gap badhata hai.
+
+CSS
+
+p{
+    word-spacing: 10px;
+}
+J. text-shadow
+Text par shadow add karta hai.
+
+CSS
+
+h1{
+    text-shadow: 2px 2px 5px gray;
+}
+Syntax
+CSS
+
+text-shadow:
+horizontal vertical blur color;
+Example
+CSS
+
+h1{
+    text-shadow: 3px 3px 8px red;
