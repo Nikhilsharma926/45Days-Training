@@ -27,6 +27,7 @@
 - Creating a simple Form with tags - `form` , `input` , `textarea` , `select` , `button` , `label`
 - Types of input fields - `checkbox`, `text` , `color` , `file` , `tel` , `date` , `number` , `radio` , `submit` , `range`
 - Attributes of Form Elements - `method`, `actions`, `target`, `novalidate`, `enctype`, `name`, required, placeholder
+
 ### Media Tags in HTML
 
 - Understanding with audio and video Tags

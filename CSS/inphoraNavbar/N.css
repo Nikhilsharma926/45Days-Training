@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 50px; 
+    background-color: #b30e0e;
+    padding: 50px;
+    
+}
+
+.right img{
+    width: 100%;
+
+}
+
