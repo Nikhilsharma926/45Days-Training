@@ -394,7 +394,7 @@ HTML
 
 
 
-<img src="nature.jpg" alt="Nature Image">
+<img src="nature.jpg" alt="mahadev">
 muted
 Audio mute karke start karega.
 
