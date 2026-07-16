@@ -1,18 +1,16 @@
-*{
-    font-family: Arial, sans-serif;
+h1
+{
     
+    color: #fff;
+    background-color: #9f1818;
+    border: 2px solid #0c0303;
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    margin: 20px;
 }
 
-
-#main{
-    color: red;
-    font-size: 20px;
-    background-color: yellow;
-   
-}
-
-.title{
-    color: blue;
-    font-size: 30px;
-    background-color: lightblue;
+p{
+    color: #333;
+    background-color: #9f1818;
 }
